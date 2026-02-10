@@ -4,42 +4,44 @@
 
 using namespace std;
 
-int n,m,r;
-vector<vector<int>> v(n);
+int n,m;
+int u,v;
+vector<vector<int>> graph;
+vector<int> visited;
 queue<int> q;
-int visited[100001];
-
-void bfs(){
-    int cnt=1;
+void bfs(int r){
     q.push(r);
-    visited[r] = cnt;
+    visited[r]=true;
     while(!q.empty()){
         int x = q.front();
         q.pop();
-        for(int i=0;i<v[x].size();i++){
-            int next = v[x][i];
+        for(int i=0;i<graph[x].size();i++){
+            int next = graph[x][i];
             if(!visited[next]){
+                visited[next] =true;
                 q.push(next);
-                visited[next]=++cnt;
             }
         }
     }
 }
 
 int main(){
-    cin >> n >> m >> r;
-
+    cin >> n >> m;
+    graph.assign(n+1,vector<int>());
+    visited.assign(n+1,0);
     for(int i=0;i<m;i++){
-        int a,b;
-        cin >> a >> b;
-        v[a].push_back(b);
-        v[b].push_back(a);
+        cin >> u >> v;
+        graph[u].push_back(v);
+        graph[v].push_back(u);
     }
-    bfs();
-
-    for(int i=0;i<n;i++){
-        cout << visited[i] << "\n";
+    int cnt=0;
+    for(int i=1;i<=n;i++){
+        if(!visited[i]){
+            bfs(i);
+            cnt++;
+        }
     }
+    cout << cnt;
 
     return 0;
 }
