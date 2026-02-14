@@ -5,25 +5,22 @@
 using namespace std;
 
 int n,m,r;
-vector<vector<int>> v;
+vector<vector<int>> v(n);
 queue<int> q;
-vector<int> depth(100001);
+int visited[100001];
 
 void bfs(){
-    int cnt=0;
-    for(int i=1;i<=n;i++){
-        depth[i]=-1;
-    }
+    int cnt=1;
     q.push(r);
-    depth[r] = 0;
+    visited[r] = cnt;
     while(!q.empty()){
         int x = q.front();
         q.pop();
         for(int i=0;i<v[x].size();i++){
             int next = v[x][i];
-            if(depth[next]==-1){
+            if(!visited[next]){
                 q.push(next);
-                depth[next]=depth[x]+1;
+                visited[next]=++cnt;
             }
             
         }
@@ -32,17 +29,16 @@ void bfs(){
 
 int main(){
     cin >> n >> m >> r;
-    v.assign(n+1,vector<int> ());
+
     for(int i=0;i<m;i++){
-        int a,b;
-        cin >> a >> b;
-        v[a].push_back(b);
-        v[b].push_back(a);
+        cin >> u >> v;
+        graph[u].push_back(v);
+        graph[v].push_back(u);
     }
     bfs();
 
-    for(int i=1;i<=n;i++){
-        cout << depth[i] << "\n";
+    for(int i=0;i<n;i++){
+        cout << visited[i] << "\n";
     }
 
     return 0;
