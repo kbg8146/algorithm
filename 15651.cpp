@@ -17,7 +17,6 @@ void backtrack(int depth){
     for(int i=1;i<=n;i++){
         arr[depth] = i;
         backtrack(depth+1);
-
     }
 }
 
