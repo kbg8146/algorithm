@@ -22,9 +22,9 @@ int main(){
         int right=n-1;
         int mid;
         bool state=0;
-        while(left<right){
+        while(left<=right){
             mid = (left+right)/2;
-            if(target[i] == card[mid]||target[i]==card[left]||target[i]==card[right]){
+            if(target[i] == card[mid]){
                 state=1;
                 break;
             }
@@ -42,3 +42,30 @@ int main(){
 
     return 0;
 }
+
+/*
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int n,m;
+long long card[500001];
+long long target[500001];
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);  
+    cin >> n;
+    for(int i=0;i<n;i++){
+        cin >> card[i];
+    }
+    sort(card,card+n);
+    cin >> m;
+    for(int i=0;i<m;i++){
+        cin >> target[i];
+        cout << binary_search(card,card+n,target[i]) << " ";
+    }
+    return 0;
+}
+*/
