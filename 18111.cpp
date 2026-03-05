@@ -31,7 +31,6 @@ int main(){
             
         }
         if(b<0) continue;
-        //cout <<"i: "<<i <<" time: "<< time << "\n";
         min_time=min(min_time,time);
         if(time==min_time) {
             height=i;
@@ -41,20 +40,3 @@ int main(){
     cout << min_time << " " << height;
     return 0;
 }
-/*
-
-0부터 256까지 모두 해본다. for문
-모든 칸 을 i에 맞춰서 빼거나 더한다.
-
-if(i보다 작으면){
-    더하고
-    b에서 그만큼뺀다.
-    1초 증가
-}
-else(i보다 크면){
-    빼고
-    b에서 그만큼 더한다.
-    2초 증가
-}
-
-*/
