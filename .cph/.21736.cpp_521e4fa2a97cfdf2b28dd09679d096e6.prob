@@ -1,0 +1,1 @@
+{"name":"Local: 21736","url":"c:\\baekjoon\\21736.cpp","tests":[{"id":1772798321160,"input":"3 5\nOOOPO\nOIOOX\nOOOXP","output":"1"},{"id":1772798339165,"input":"3 3\nIOX\nOXP\nXPP","output":"TT"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\baekjoon\\21736.cpp","group":"local","local":true}
