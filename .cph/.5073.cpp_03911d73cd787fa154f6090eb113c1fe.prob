@@ -1,0 +1,1 @@
+{"name":"Local: 5073","url":"c:\\baekjoon\\5073.cpp","tests":[{"id":1773454845324,"input":"2 2 4\n3 9 8\n2 2 2\n7 8 8\n0 0 0","output":"Equilateral\nScalene\nInvalid\nIsosceles"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\baekjoon\\5073.cpp","group":"local","local":true}
