@@ -8,7 +8,7 @@
 
 # VS Code
 .vscode/
-
+*.cph/
 # 임시/로그
 *.log
 
