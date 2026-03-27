@@ -1,1 +1,0 @@
-{"name":"Local: main","url":"c:\\baekjoon\\1978\\main.cpp","tests":[{"id":1768305813391,"input":"4\n1 3 5 7","output":"3"},{"id":1768306308383,"input":"4\n1 6 8 10","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\baekjoon\\1978\\main.cpp","group":"local","local":true}
