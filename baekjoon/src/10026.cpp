@@ -14,9 +14,6 @@ int visited[101][101];
 int n;
 int InRange(int x, int y) { return 0 <= x && x < n && 0 <= y && y < n; }
 
-// 큐에 넣고 큐가 빌때까지 반복
-// 4방향 모두 검사
-// if(이전 alp이랑 같으면 방문 ,visited, 큐에 넣기)
 void bfs(int a, int b) {
   q.push({a, b});
   visited[a][b] = 1;
