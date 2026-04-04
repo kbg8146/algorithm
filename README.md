@@ -5,11 +5,12 @@ C++ 기반 알고리즘 문제풀이 저장소
 ---
 
 ## 구조
-
+```
 algorithm/
 ├── baekjoon/       # 백준 온라인 저지
 ├── programmers/    # 프로그래머스
 └── codetree/       # 코드트리
+```
 
 ## 언어
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
