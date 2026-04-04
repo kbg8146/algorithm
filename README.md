@@ -11,9 +11,11 @@ algorithm/
 ├── programmers/    # 프로그래머스
 └── codetree/       # 코드트리
 ```
-
+---
 ## 언어
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+
+---
 
 ## 풀이 현황
 | 플랫폼 | 분류 |
@@ -22,8 +24,12 @@ algorithm/
 | **프로그래머스** | BFS/DFS · 해시 · 정렬 · 완전탐색 · 스택/큐 |
 | **코드트리** | 시뮬레이션 · 2D 배열 · 재귀 · 그래프 탐색 · 정렬 · 백트래킹 |
 
+---
+
 ## Solved.ac
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=kbg8146)](https://solved.ac/kbg8146)
+
+---
 
 ## 워크플로우
 - Issue 생성 (문제 번호 + 유형)
