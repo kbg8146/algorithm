@@ -4,10 +4,11 @@ using namespace std;
 int excel[1025][1025] = {};
 int sum[1025][1025] = {};
 int main() {
-
+  ios_base::sync_with_stdio(NULL);
+  cin.tie(NULL);
   int n, m;
   cin >> n >> m;
-
+  
   for (int i = 1; i <= n; i++) {
     for (int j = 1; j <= n; j++) {
       cin >> excel[i][j];
